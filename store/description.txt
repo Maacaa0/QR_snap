@@ -1,0 +1,72 @@
+=== SHORT DESCRIPTION (max 132 characters) ===
+
+Find QR codes on the page you are viewing, or snip any region of the screen, and read, copy or open the value.
+
+
+=== DETAILED DESCRIPTION ===
+
+QR Snap reads QR codes that are already on your screen - no phone, no camera, no upload.
+
+SCAN THIS PAGE
+One click screenshots the tab and decodes every QR code on it. Turn on the full-page option and QR Snap scrolls through the document, scanning as it goes. Every code it finds is outlined on the page, so you can see which one is which.
+
+SNIP A REGION
+Drag a rectangle over anything on screen - a video call, a PDF preview, a canvas, a design tool, a screenshot someone pasted into a chat. QR Snap upscales the selection and reads the code inside it, so even small codes come through.
+
+You also get a right-click menu on any page or image, and keyboard shortcuts: Alt+Shift+Q opens the popup, Alt+Shift+S starts a snip.
+
+READS MORE THAN LINKS
+Links, Wi-Fi network cards, contact cards (vCard and MECARD), calendar events, email addresses, phone numbers, SMS, map locations and authenticator setup codes are all recognised and labelled.
+
+BUILT TO BE CAREFUL WITH WHAT IT FINDS
+A QR code is a link you cannot read with your eyes, so QR Snap checks it for you before you open anything. It warns about plain http, look-alike domains (punycode and non-ASCII host names), raw IP addresses and "user:password@host" phishing URLs. Only http and https links can be opened at all. Wi-Fi passwords and one-time-password secrets stay hidden in the preview - copying still gives you the exact value.
+
+PRIVATE BY DESIGN
+Nothing leaves your browser. Decoding happens locally, there is no account, no analytics and no server. The optional history of the last 50 codes is stored on your machine and you can clear it from the popup at any time.
+
+OPEN SOURCE
+The full source is at https://github.com/Maacaa0/QR_snap - including the QR decoder, which is bundled in the package. No remote code is ever loaded.
+
+SUPPORT
+QR Snap is free. If it saved you a trip to your phone, there is a "Buy me a coffee" link in the popup footer - entirely optional, nothing in the extension is gated behind it.
+
+
+=== SINGLE PURPOSE STATEMENT ===
+
+QR Snap has a single purpose: decoding QR codes that are visible in the user's browser tab and presenting the decoded value.
+
+
+=== PERMISSION JUSTIFICATIONS ===
+
+activeTab
+Needed to capture the visible area of the tab the user is on when they click the toolbar button, the context menu or the keyboard shortcut. The capture is decoded in memory and never uploaded. No permanent host access is requested.
+
+scripting
+Needed to draw the snipping rectangle, outline found codes and show the result panel inside the current page, and to measure images before cropping the capture. Scripts are injected only in response to a user action.
+
+contextMenus
+Adds the "Scan this page for QR codes", "Snip a region and read its QR code" and "Read QR code in this image" entries to the right-click menu.
+
+storage
+Stores the user's own settings and the optional local history of the last 50 decoded codes. Local only, never synced or transmitted.
+
+clipboardWrite
+The Copy button writes the decoded value to the clipboard.
+
+Remote code: No. The QR decoder (jsQR, Apache-2.0) ships inside the package; nothing is fetched at runtime.
+
+
+=== DATA USAGE ANSWERS ===
+
+Collects personally identifiable information: No
+Health information: No
+Financial and payment information: No
+Authentication information: No
+Personal communications: No
+Location: No
+Web history: No
+User activity: No
+Website content: No
+Sold to third parties: No
+Used for purposes unrelated to the single purpose: No
+Used to determine creditworthiness or for lending: No
