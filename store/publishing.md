@@ -21,7 +21,7 @@ The dashboard will not accept the item without a public privacy policy URL.
 2. Repository **Settings** -> **Pages** -> Source: **Deploy from a branch**, branch `main`,
    folder `/docs` -> Save.
 3. After a minute the policy is live at
-   `https://maacaa0.github.io/QR_snap/privacy-policy` - paste that into the dashboard.
+   `https://maacaa0.github.io/QR_snap/privacy-policy.html` - paste that into the dashboard.
 
 ## 3. Buy Me a Coffee (optional, independent of the store)
 

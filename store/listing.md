@@ -88,8 +88,8 @@ No host permissions are requested and no remote code is loaded - the QR decoder
 - Is data used for purposes unrelated to the single purpose? **No**
 - Is data used to determine creditworthiness or for lending? **No**
 
-Privacy policy URL: host the contents of `docs/privacy-policy.md` on a public URL and
-paste that link into the dashboard.
+Privacy policy URL: https://maacaa0.github.io/QR_snap/privacy-policy.html
+(GitHub Pages, served from the `docs/` folder).
 
 ## Upload checklist
 

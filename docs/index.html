@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>QR Snap - QR code scanner for any page</title>
+    <meta
+      content="Chrome extension that reads QR codes already on your screen. No phone, no camera, no upload."
+      name="description"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <link href="../icons/icon128.png" rel="icon" />
+  </head>
+  <body>
+    <main>
+      <header class="site">
+        <img alt="" src="../icons/icon128.png" />
+        <h1>QR Snap</h1>
+      </header>
+
+      <p class="lede">
+        A Chrome extension that reads QR codes already on your screen. No phone, no camera, no
+        upload - it screenshots the tab you are on, decodes what it finds, and checks whether the
+        link is safe before you open it.
+      </p>
+
+      <div class="panel">
+        <strong>Links</strong>
+        <ul>
+          <li><a href="https://github.com/Maacaa0/QR_snap">Source code on GitHub</a></li>
+          <li><a href="privacy-policy.html">Privacy policy</a></li>
+          <li><a href="https://buymeacoffee.com/maacaa0">Buy me a coffee</a></li>
+        </ul>
+      </div>
+
+      <h2>What it does</h2>
+      <ul>
+        <li>
+          <strong>Scan this page</strong> - decodes every QR code on the visible tab, optionally
+          scrolling through the whole document, and outlines what it found.
+        </li>
+        <li>
+          <strong>Snip a region</strong> - drag a rectangle over anything on screen, including a
+          canvas, a PDF preview or a video call, and read the code inside it.
+        </li>
+        <li>
+          Recognises links, Wi-Fi cards, contacts, calendar events, email, phone, SMS, locations and
+          authenticator codes.
+        </li>
+        <li>
+          Warns about plain http, look-alike host names, raw IP addresses and
+          <code>user:password@host</code> phishing links before you open anything.
+        </li>
+      </ul>
+
+      <div class="shots">
+        <img alt="A QR code found on a page and outlined, with the decoded link shown" src="screenshots/page-scan.png" />
+        <img alt="Dragging a selection rectangle across a QR code" src="screenshots/snip.png" />
+        <img alt="The extension popup listing decoded results" src="screenshots/popup.png" />
+      </div>
+
+      <h2>Privacy in one line</h2>
+      <p>
+        Nothing leaves your browser. Decoding happens locally, there is no account, no analytics and
+        no server. Full text in the <a href="privacy-policy.html">privacy policy</a>.
+      </p>
+
+      <footer>MIT licensed. Bundles jsQR under the Apache License 2.0.</footer>
+    </main>
+  </body>
+</html>

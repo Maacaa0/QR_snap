@@ -118,7 +118,7 @@ holds the listing copy and permission justifications.
 
 Nothing leaves your browser: no account, no analytics, no server. The optional history of the
 last 50 codes is stored locally and can be cleared from the popup. Full text in
-[docs/privacy-policy.md](docs/privacy-policy.md).
+[docs/privacy-policy.html](docs/privacy-policy.html), published at https://maacaa0.github.io/QR_snap/privacy-policy.html.
 
 ## Support
 

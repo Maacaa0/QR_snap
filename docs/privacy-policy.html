@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>QR Snap privacy policy</title>
+    <meta content="QR Snap collects nothing. Decoding happens locally in the browser." name="description" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="../icons/icon128.png" rel="icon" />
+  </head>
+  <body>
+    <main>
+      <header class="site">
+        <img alt="" src="../icons/icon128.png" />
+        <h1>QR Snap privacy policy</h1>
+      </header>
+
+      <p>Last updated: 17 September 2026</p>
+
+      <p class="lede">
+        QR Snap ("the extension") decodes QR codes that are visible in your browser. It collects
+        nothing and transmits nothing.
+      </p>
+
+      <h2>What the extension collects</h2>
+      <p>
+        Nothing. The extension has no server, no account and no analytics. No data is sent anywhere,
+        to us or to any third party. We do not sell or share user data.
+      </p>
+
+      <h2>What happens locally</h2>
+      <ul>
+        <li>
+          When you start a scan or a snip, the extension takes a screenshot of the visible area of
+          the current tab, decodes it in your browser's memory and then discards the image. The
+          screenshot is never written to disk and never uploaded.
+        </li>
+        <li>
+          If the local history option is on (it is on by default), the decoded text, the page title
+          and the page URL of the last 50 codes are stored on your computer using Chrome's local
+          extension storage. This never leaves your machine and is not synced between devices.
+        </li>
+        <li>
+          You can switch the history off in the extension settings, clear it with one click in the
+          popup, or remove everything by uninstalling the extension.
+        </li>
+      </ul>
+
+      <h2>Permissions</h2>
+      <p>
+        The extension requests <code>activeTab</code>, <code>scripting</code>,
+        <code>contextMenus</code>, <code>storage</code> and <code>clipboardWrite</code>. They are
+        used only to capture the current tab when you ask for a scan, to draw the selection
+        rectangle and the result panel in the page, to provide the right-click menu entries, to
+        store your settings and optional history locally, and to copy a decoded value to your
+        clipboard.
+      </p>
+      <p>
+        The extension requests no host permissions and loads no remote code. The QR decoding library
+        (jsQR, Apache-2.0) is bundled inside the extension package.
+      </p>
+
+      <h2>Children</h2>
+      <p>
+        The extension is not directed at children and collects no data from anyone, regardless of
+        age.
+      </p>
+
+      <h2>Changes</h2>
+      <p>
+        If this policy changes, the updated version is published on this page with a new "last
+        updated" date, and the change is recorded in the project's changelog.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Questions or concerns:
+        <a href="https://github.com/Maacaa0/QR_snap/issues">open an issue on GitHub</a>.
+      </p>
+
+      <footer><a href="index.html">Back to QR Snap</a></footer>
+    </main>
+  </body>
+</html>
