@@ -1,0 +1,12 @@
+{
+  "name": "qr-snap-extension",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Chrome MV3 extension that finds QR codes on the current page or in a snipped screen region",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "icons": "node scripts/make-icons.mjs",
+    "package": "bash scripts/package.sh"
+  }
+}

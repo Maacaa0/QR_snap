@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Unit tests
+        run: node --test 'tests/*.test.mjs'
+
+      - name: Manifest and asset preflight
+        run: node scripts/verify.mjs
+
+      - name: Lint and format check
+        run: npx --yes @biomejs/biome@2.4.7 check .
+
+      - name: Build store package
+        run: bash scripts/package.sh
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: extension-zip
+          path: dist/*.zip

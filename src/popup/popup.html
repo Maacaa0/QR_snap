@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>QR Snap</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <header class="head">
+      <img src="../../icons/icon32.png" alt="" width="24" height="24">
+      <h1>QR Snap</h1>
+    </header>
+
+    <div class="actions">
+      <button class="primary" id="scan" type="button">Scan this page</button>
+      <button id="snip" type="button">Snip a region</button>
+    </div>
+
+    <p class="status" id="status" role="status" aria-live="polite"></p>
+
+    <section aria-labelledby="results-title">
+      <h2 class="section-title" id="results-title">Results</h2>
+      <ul class="list" id="results"></ul>
+      <p class="empty" id="empty">
+        Scan the page, or snip a region of the screen, to read a QR code.
+      </p>
+    </section>
+
+    <details id="history-box">
+      <summary>Recent codes</summary>
+      <ul class="list" id="history"></ul>
+      <button class="link" id="clear-history" type="button">
+        Clear history
+      </button>
+    </details>
+
+    <details id="settings-box">
+      <summary>Settings</summary>
+      <label class="check">
+        <input id="full-page" type="checkbox">
+        <span>Scroll through the whole page when scanning (slower)</span>
+      </label>
+      <label class="check">
+        <input id="highlight" type="checkbox">
+        <span>Outline found codes on the page</span>
+      </label>
+      <label class="check">
+        <input id="save-history" type="checkbox">
+        <span>Keep a local history of the last 50 codes</span>
+      </label>
+    </details>
+
+    <footer class="support">
+      <a href="https://buymeacoffee.com/maacaa0" rel="noopener" target="_blank">Buy me a coffee</a>
+      <span aria-hidden="true">|</span>
+      <a href="https://github.com/Maacaa0/QR_snap" rel="noopener" target="_blank">Source and issues</a>
+    </footer>
+
+    <script src="popup.js" type="module"></script>
+  </body>
+</html>
